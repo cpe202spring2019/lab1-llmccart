@@ -6,6 +6,12 @@ class TestLab1(unittest.TestCase):
     def test_repr(self):
         loc = Location("SLO", 35.3, -120.7)
         self.assertEqual(repr(loc),"Location('SLO', 35.3, -120.7)")
+
+        loc2 = Location("Morocco", 31.79, -7.09)
+        self.assertEqual(repr(loc2),"Location('Morocco', 31.79, -7.09)")
+
+        loc3 = Location("Seattle", 34.3, -120.7)
+        self.assertEqual(repr(loc3), "Location('Seattle', 34.3, -120.7)")
     
     # Add more tests!
 
